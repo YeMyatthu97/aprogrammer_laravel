@@ -12,14 +12,10 @@
 */
 
 Route::resource('receipe','ReceipeController');
+Route::get('/home','HomeController@index');
 
-// Route::get('receipe','ReceipeController@index');
-// Route::get('create_receipe','ReceipeController@createReceipeForm');
-// Route::get('receipe/{id}','ReceipeController@show');
-// Route::post('receipe','ReceipeController@create');
-// Route::get('receipe/{id}/edit','ReceipeController@edit');
-// Route::get('receipe/{id}','ReceipeController@update');
-// Route::delete('receipe/{id}','ReceipeController@delete');
+Auth::routes();
+
 
 
 
